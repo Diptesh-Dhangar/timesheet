@@ -44,8 +44,7 @@ const timeOffRequestSchema = new mongoose.Schema({
     maxlength: [500, 'Rejection reason cannot exceed 500 characters']
   },
   daysRequested: {
-    type: Number,
-    required: true
+    type: Number
   }
 }, {
   timestamps: true
