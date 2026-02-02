@@ -1,21 +1,19 @@
-import axios from 'axios';
-
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5002/api';
+import axios from "axios";
 
 const api = axios.create({
-  baseURL: API_BASE_URL,
+  baseURL: "/api", // ✅ SAME ORIGIN
   headers: {
-    'Content-Type': 'application/json',
+    "Content-Type": "application/json",
   },
-  withCredentials: true, // Enable cookies for session-based auth
+  withCredentials: true,
 });
 
 api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
-      sessionStorage.removeItem('user');
-      window.location.href = '/login';
+      sessionStorage.removeItem("user");
+      window.location.href = "/login";
     }
     return Promise.reject(error);
   }
