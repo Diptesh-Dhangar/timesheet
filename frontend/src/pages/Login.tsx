@@ -188,15 +188,6 @@ const Login: React.FC = () => {
           </button>
         </form>
         
-        <div className="demo-accounts">
-          <h3>Demo Accounts:</h3>
-          <div className="demo-account">
-            <strong>Employee:</strong> john.employee@company.com / password123
-          </div>
-          <div className="demo-account">
-            <strong>Manager:</strong> mike.manager@company.com / password123
-          </div>
-        </div>
       </div>
     </div>
   );
