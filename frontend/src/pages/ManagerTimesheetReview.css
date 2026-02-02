@@ -1,0 +1,361 @@
+.manager-review {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.manager-review h2 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.timesheets-grid {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.grid-header {
+  background-color: #34495e;
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1.5fr 1fr;
+  gap: 1rem;
+}
+
+.timesheets-grid > div {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+}
+
+.timesheets-grid > div:nth-child(5n+1),
+.timesheets-grid > div:nth-child(5n+2),
+.timesheets-grid > div:nth-child(5n+3),
+.timesheets-grid > div:nth-child(5n+4),
+.timesheets-grid > div:nth-child(5n+5) {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1.5fr 1fr;
+  gap: 1rem;
+}
+
+.employee {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.employee small {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.week-period {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.total-hours {
+  font-weight: bold;
+  color: #3498db;
+}
+
+.submitted-date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.review-btn {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.review-btn:hover {
+  background-color: #e67e22;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.page-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.page-btn:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.page-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.page-info {
+  color: #666;
+  font-weight: 500;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.empty-state p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.timesheet-detail {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+}
+
+.detail-header h3 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+.back-btn {
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #7f8c8d;
+}
+
+.employee-info {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.entries-section {
+  margin-bottom: 2rem;
+}
+
+.entries-section h4 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.entries-grid {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.entries-grid .grid-header {
+  background-color: #34495e;
+  color: white;
+  padding: 0.75rem;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 120px 80px 1fr 1fr;
+  gap: 1rem;
+  margin: 0;
+}
+
+.entries-grid > div {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+}
+
+.entries-grid > div:nth-child(4n+1),
+.entries-grid > div:nth-child(4n+2),
+.entries-grid > div:nth-child(4n+3),
+.entries-grid > div:nth-child(4n+4) {
+  display: grid;
+  grid-template-columns: 120px 80px 1fr 1fr;
+  gap: 1rem;
+}
+
+.day {
+  font-weight: 500;
+  color: #555;
+}
+
+.hours {
+  font-weight: bold;
+  color: #3498db;
+  text-align: center;
+}
+
+.project {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.description {
+  color: #666;
+}
+
+.review-form {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.review-form h4 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.form-group label input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.form-group label:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.submit-btn,
+.cancel-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn {
+  background-color: #27ae60;
+  color: white;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #229954;
+}
+
+.submit-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.cancel-btn {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #7f8c8d;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .grid-header,
+  .timesheets-grid > div:nth-child(5n+1),
+  .timesheets-grid > div:nth-child(5n+2),
+  .timesheets-grid > div:nth-child(5n+3),
+  .timesheets-grid > div:nth-child(5n+4),
+  .timesheets-grid > div:nth-child(5n+5),
+  .entries-grid .grid-header,
+  .entries-grid > div:nth-child(4n+1),
+  .entries-grid > div:nth-child(4n+2),
+  .entries-grid > div:nth-child(4n+3),
+  .entries-grid > div:nth-child(4n+4) {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+  
+  .timesheets-grid > div,
+  .entries-grid > div {
+    padding: 0.75rem;
+  }
+  
+  .grid-header {
+    display: none;
+  }
+  
+  .detail-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+}
